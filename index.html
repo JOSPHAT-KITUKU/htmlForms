@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Student Register</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="#register">Register</a>
+                <a href="#Login">Login</a>
+            </nav>
+
+            <section class="form_title" id="register">
+                <h2>Register here</h2>
+                <p>Please note all the details are compulsory.</p>
+            </section>
+            <form action="/" method="post" name="form_inp" id="form_inp">
+                <!--Name-->
+                <div class="name_det">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your Firstname" required>
+                </div>
+                <div class="name_det">
+                    <label for="middlename">Middle Name</label>
+                    <input type="text" name="middlename" id="middlename" placeholder="Enter your Middle Name">
+                </div>
+                <div class="name_det">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="dob">
+                    <!--Date of Birth-->
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+                <div class="studgender" style="margin-top: 20px;height:40px;width:80px;display:flex;justify-content:center;align-items:center">
+                    <!--Gender-->
+                    <div>
+                        <label>Gender</label>
+                    </div>
+                </div>
+                <div class="gender_val" id="gender" name="gender">
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="address_stud">
+                    <!--Address-->
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City">
+                </div>
+                <div class="address_stud">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" placeholder="Country">
+                </div>
+                <div class="stud_tel">
+                    <!--Telephone-->
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="07XXXXXXXX">
+                </div>
+
+                <div class="stud_email">
+                    <!--Email Address-->
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="xyz@domain.com" name="email" id="email">
+                </div>
+
+                <div class="stud_course">
+                    <!--Course-->
+                    <label for="course">Course</label>
+                    <select name="course" id="course">
+                        <option value="select_course">Select Course</option>
+                        <option value="Information_Technology">Information Technology</option>
+                        <option value="Economics">Economics</option>
+                        <option value="Data_Science">Data Science</option>
+                        <option value="Programming">Programming</option>
+                    </select>
+                </div>
+                <div class="buttns">
+                    <div class="submitb">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                    <div class="cancel">
+                        <input type="reset" value="Cancel">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
